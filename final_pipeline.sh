@@ -4,12 +4,7 @@
 #SBATCH -e pipe.e
 #SBATCH -o pipe.o
 #SBATCH --partition=XESH
-#SBATCH --mem=75GB 
 #SBATCH --time=03:00:00
-#SBATCH --ntasks=10
-##SBATCH --exclusive
-##SBATCH -p MPI
-##SBATCH --cpus-per-task=8
 
 
 module load STAR/2.7.5a R samtools GCC
